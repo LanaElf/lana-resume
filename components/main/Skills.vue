@@ -43,7 +43,8 @@ const activeLogoName = ref('');
         <li>Адаптивная вёрстка</li>
         <li>Figma / Photoshop</li>
         <li>Git</li>
-        <li>Английский язык (~ B2)</li>
+        <li>CI/CD (GitHUb Actions)</li>
+        <li>Английский язык (~ B1)</li>
         <li>Декомпозиция задач</li>
         <li>DRY, KISS, YAGNI</li>
         <li>ООП, SOLID</li>
@@ -53,11 +54,12 @@ const activeLogoName = ref('');
     <div>
       <div class="font-bold text-intense text-lg mb-2">Soft</div>
       <ul class="flex flex-col gap-1">
-        <li>Нацеленность на результат</li>
         <li>Работа в команде</li>
+        <li>Критическое мышление</li>
         <li>Ответственность</li>
         <li>Адаптивность</li>
         <li>Самодисциплина</li>
+        <li>Целеустремленность</li>
       </ul>
     </div>
   </section>
