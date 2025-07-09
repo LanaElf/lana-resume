@@ -44,4 +44,4 @@ jobs:
           username: ${{ secrets.BEGET_FTP_USER }}
           password: ${{ secrets.BEGET_FTP_PASSWORD }}
           local-dir: .output/public/
-          server-dir: /dev-lana.ru/public_html
+          server-dir: /dev-lana.ru/public_html/
