@@ -15,7 +15,7 @@ useSeoMeta({
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet');
 
 .nunito {
   font-family: "Nunito", monospace;
@@ -23,13 +23,14 @@ useSeoMeta({
 }
 
 :root {
-  --dark-color: #020617;
-  --light-color: #ffe4e6;
-  --calm-color: #fda4af;
-  --intense-color: #f43f5e;
-  --accent-color: #7c3aed;
+  /*tailwind colors*/
+  --dark-color: #171717; /*neutral-900*/
+  --light-color: #fff7ed; /*orange-50*/
+  --calm-color: #fdba74; /*orange-300*/
+  --intense-color: #ea580c; /*orange-600*/
+  --accent-color: #059669; /*emerald-600*/
 
-  font-family: "Nunito", monospace;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   color: var(--dark-color);
   cursor: default;
