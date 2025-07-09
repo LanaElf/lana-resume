@@ -29,7 +29,7 @@ jobs:
         run: npm run generate
 
       - name: Check build output
-        run: ls -la .output/public
+        run: ls -la .output/public/
 
   deploy:
     needs: build-test
@@ -37,9 +37,6 @@ jobs:
     if: ${{ success() }}
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Deploy to Beget via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
