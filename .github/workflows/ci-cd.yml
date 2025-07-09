@@ -25,8 +25,8 @@ jobs:
       - name: Run Vitest tests
         run: npx vitest run
 
-      - name: Build Nuxt.js project
-        run: npm run build
+      - name: Build static version of Nuxt.js project
+        run: nuxt generate
 
   deploy:
     needs: build-test
@@ -43,5 +43,5 @@ jobs:
           server: ${{ secrets.BEGET_HOST }}
           username: ${{ secrets.BEGET_FTP_USER }}
           password: ${{ secrets.BEGET_FTP_PASSWORD }}
-          local-dir: .output/public/
+          local-dir: dist/
           server-dir: /dev-lana.ru/public_html/
