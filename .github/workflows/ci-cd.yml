@@ -31,12 +31,24 @@ jobs:
       - name: Check build output
         run: ls -la .output/public/
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: .output/public
+
   deploy:
     needs: build-test
     runs-on: ubuntu-latest
     if: ${{ success() }}
 
     steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-output
+          path: .output/public
+
       - name: Deploy to Beget via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
