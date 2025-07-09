@@ -56,4 +56,20 @@ jobs:
           username: ${{ secrets.BEGET_FTP_USER }}
           password: ${{ secrets.BEGET_FTP_PASSWORD }}
           local-dir: .output/public/
-          server-dir: /
+          server-dir: /dev-lana.ru/public_html/
+
+      - name: Notify Telegram on failure
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            🚨 *Deploy Failed* 🚨
+            Репозиторий: ${{ github.repository }}
+            Ветка: ${{ github.ref }}
+            Коммит: ${{ github.sha }}
+            Автор: ${{ github.actor }}
+            Workflow: ${{ github.workflow }}
+            Подробнее: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          parse_mode: markdown
