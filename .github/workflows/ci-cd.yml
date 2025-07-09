@@ -26,7 +26,7 @@ jobs:
         run: npx vitest run
 
       - name: Build static version of Nuxt.js project
-        run: nuxt generate
+        run: npm run generate
 
   deploy:
     needs: build-test
