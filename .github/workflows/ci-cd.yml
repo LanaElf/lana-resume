@@ -28,8 +28,10 @@ jobs:
       - name: Build static version of Nuxt.js project
         run: npm run generate
 
-      - name: Check build output
-        run: ls -la .output/public/
+      - name: Copy assets to .output/public/_nuxt
+        run: |
+          mkdir -p .output/public/_nuxt
+          cp -r assets/* .output/public/_nuxt/
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -56,4 +58,4 @@ jobs:
           username: ${{ secrets.BEGET_FTP_USER }}
           password: ${{ secrets.BEGET_FTP_PASSWORD }}
           local-dir: .output/public/
-          server-dir: /dev-lana.ru/public_html/
+          server-dir: /
