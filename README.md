@@ -1,3 +1,5 @@
+Мой сайт-резюме, посмотреть можно <a href="https://dev-lana.ru" target="_blank">здесь</a>
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
