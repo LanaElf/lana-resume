@@ -46,6 +46,6 @@ function copy(text: string) {
 
 .contact-ico {
   height: 20px;
-  filter: brightness(0) saturate(100%) invert(81%) sepia(77%) saturate(1945%) hue-rotate(292deg) brightness(103%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(90%) sepia(12%) saturate(2735%) hue-rotate(314deg) brightness(102%) contrast(103%);
 }
 </style>
