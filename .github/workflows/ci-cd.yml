@@ -43,11 +43,6 @@ jobs:
     if: ${{ success() }}
 
     steps:
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: build-output
-          path: .output/public
 
       - name: Deploy to Beget via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
