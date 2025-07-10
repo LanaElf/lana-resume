@@ -1,4 +1,7 @@
-Мой сайт-резюме, Vue + Nuxt + TS + Pinia + Tailwind. Посмотреть можно <a href="https://dev-lana.ru" target="_blank">здесь</a>
+Мой сайт-резюме, Vue + Nuxt + TS + Pinia + Tailwind. 
+Настроен CI/CD
+
+Посмотреть можно <a href="https://dev-lana.ru" target="_blank">здесь</a>
 
 # Nuxt Minimal Starter
 
