@@ -35,7 +35,7 @@ function copy(text: string) {
   </footer>
 </template>
 
-<style scoped>
+<style>
 .hover-light:hover {
   color: var(--light-color);
 }
