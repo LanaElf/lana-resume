@@ -1,8 +1,8 @@
 import {defineStore} from 'pinia'
 
 export const usePuzzleStore: any = defineStore('puzzle', () => {
-    const picDir: string = process.env.NUXT_APP_BASE_URL && process.env.NUXT_APP_BASE_URL !== '/'
-        ? `${process.env.NUXT_APP_BASE_URL}/_nuxt/assets/images/puzzlePictures/`
+    const picDir: string = process.env.NUXT_APP_BASE_URL
+        ? `${process.env.NUXT_APP_BASE_URL}_nuxt/assets/images/puzzlePictures/`
         : '/_nuxt/assets/images/puzzlePictures/';
 
     const pictures: Array<string> = [
