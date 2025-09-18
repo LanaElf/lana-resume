@@ -9,7 +9,7 @@
             <div class="flex justify-center gap-3 w-300">
                 <h1 class="flex flex-col gap-1 font-bold text-xl">
                     <span class="text-typing-1">Привет! Меня зовут Лана</span>
-                    <span class="text-typing-2 w-0">Я - frontend-разработчик</span>
+                    <span class="text-typing-2 w-0">Я - web-разработчик</span>
                 </h1>
             </div>
         </div>
