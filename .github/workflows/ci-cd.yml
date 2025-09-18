@@ -25,16 +25,26 @@ jobs:
       - name: Run Vitest tests
         run: npx vitest run
 
-      - name: Build static version of Nuxt.js project
+      - name: Build static version for Beget
         run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: '/' # Для Beget — корень
 
-      - name: Copy assets to .output/public/_nuxt
-        run: cp -r assets/* .output/public/_nuxt/
-
-      - name: Upload build artifacts
+      - name: Upload build artifacts for Beget
         uses: actions/upload-artifact@v4
         with:
-          name: build-output
+          name: build-output-beget
+          path: .output/public
+
+      - name: Build static version for GitHub Pages
+        run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: '/lana-resume/' # Для GitHub Pages — поддиректория
+
+      - name: Upload build artifacts for GitHub Pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-gh-pages
           path: .output/public
 
   deploy:
@@ -43,10 +53,10 @@ jobs:
     if: ${{ success() }}
 
     steps:
-      - name: Download build artifacts
+      - name: Download build artifacts for Beget
         uses: actions/download-artifact@v4
         with:
-          name: build-output
+          name: build-output-beget
           path: .output/public
 
       - name: Deploy to Beget via FTP
@@ -65,7 +75,50 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            🚨 *Deploy Failed* 🚨
+            🚨 *Beget Deploy Failed* 🚨
+            Репозиторий: ${{ github.repository }}
+            Ветка: ${{ github.ref }}
+            Коммит: ${{ github.sha }}
+            Автор: ${{ github.actor }}
+            Workflow: ${{ github.workflow }}
+            Подробнее: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          parse_mode: markdown
+
+  deploy-gh-pages:
+    needs: build-test
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Download build artifacts for GitHub Pages
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output-gh-pages
+          path: .output/public
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
+          destination_dir: lana-resume # Поддиректория на GitHub Pages
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Notify Telegram on GH Pages failure
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            🚨 *GH Pages Deploy Failed* 🚨
             Репозиторий: ${{ github.repository }}
             Ветка: ${{ github.ref }}
             Коммит: ${{ github.sha }}
