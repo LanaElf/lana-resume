@@ -31,8 +31,8 @@ jobs:
         env:
           NUXT_APP_BASE_URL: '/'
 
-      - name: Copy assets to .output/public/_nuxt
-        run: cp -r assets/* .output/public/_nuxt/
+      - name: Copy assets to .output/public/_nuxt/assets
+        run: cp -r assets/* .output/public/_nuxt/assets/
 
       - name: Upload build artifacts for Beget
         uses: actions/upload-artifact@v4
@@ -46,8 +46,8 @@ jobs:
         env:
           NUXT_APP_BASE_URL: '/lana-resume/'
 
-      - name: Copy assets to .output/public/_nuxt
-        run: cp -r assets/* .output/public/_nuxt/
+      - name: Copy assets to .output/public/_nuxt/assets
+        run: cp -r assets/* .output/public/_nuxt/assets/
 
       - name: Upload build artifacts for GitHub Pages
         uses: actions/upload-artifact@v4
