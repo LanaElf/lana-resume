@@ -20,4 +20,7 @@ export default defineNuxtConfig({
     exposeConfig: true,
     viewer: true,
   },
+  css: [
+    '@/assets/styles/global.css'
+  ]
 })

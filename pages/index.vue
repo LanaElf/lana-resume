@@ -1,6 +1,8 @@
 <template>
-    <Header />
-    <Navigation />
-    <Main />
-    <Footer />
+    <CosmicBackground>
+        <Navigation />
+        <Header />
+        <Main />
+        <Footer />
+    </CosmicBackground>
 </template>

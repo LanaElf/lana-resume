@@ -60,6 +60,7 @@ defineExpose({
 
 <template>
   <div
+      data-allow-mismatch
       class="puzzle-detail"
       :style="{
         'width': chosenPuzzle.containerWidth / difficulty.detailsInRow + 'px',

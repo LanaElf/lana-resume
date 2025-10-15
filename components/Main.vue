@@ -6,14 +6,14 @@ import About from "~/components/main/About.vue";
 </script>
 
 <template>
-  <div class="w-full text-center m-auto">
+  <main class="w-full text-center m-auto">
     <div class="flex flex-col justify-center items-center">
       <Skills />
       <Experience />
       <Example />
       <About />
     </div>
-  </div>
+  </main>
 </template>
 
 <style>

@@ -1,27 +1,28 @@
 <template>
-  <div class="flex flex-col items-center bg-dark sticky top-0 z-10">
-    <div class="stripe bg-calm"></div>
-
-    <nav class="flex flex-wrap justify-center gap-2 md:gap-5 bg-dark p-2 md:p-3">
+  <div class="flex flex-col items-center top-0 z-10 nav-panel glass glass-black text-calm press-start-2p">
+    <nav class="flex flex-wrap justify-center gap-2 md:gap-5 p-2 md:p-3">
         <a href="#skills" class="nav-link">Навыки</a>
         <a href="#experience" class="nav-link">Опыт</a>
         <a href="#code-example" class="nav-link">Пример кода</a>
         <a href="#about-me" class="nav-link">Обо мне</a>
         <a href="#contacts" class="nav-link">Контакты</a>
     </nav>
-
-    <div class="stripe bg-calm"></div>
   </div>
 </template>
 
 <style>
+.nav-panel {
+  position: fixed;
+  width: 100vw;
+}
+
 .nav-link {
-    padding: 4px 12px;
+    padding: 6px 12px;
+    font-size: 10px;
     border-radius: 30px;
-    border: 3px solid var(--calm-color);
-    color: var(--dark-color);
-    background-color: var(--calm-color);
-    font-size: 1rem;
+    border: 2px solid var(--calm-color);
+    color: var(--calm-color);
+    background-color: transparent;
     font-weight: 700;
     transition: 0.5s;
 }
@@ -31,9 +32,9 @@
   }
 }
 .nav-link:hover {
-    color: var(--calm-color);
-    background-color: transparent;
-    border: 3px solid var(--calm-color);
+    color: var(--light-color);
+    background-color: var(--calm-color);
+    border: 2px solid var(--calm-color);
 }
 .stripe {
   width: 0;

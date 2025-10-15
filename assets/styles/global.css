@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet');
+
+.nunito {
+  font-family: "Nunito", monospace;
+  font-style: normal;
+}
+
+.press-start-2p {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --dark-color: #14011a;
+  --light-color: #dcd4fb;
+  --calm-color: #c59eff;
+  --intense-color: #861de8;
+  --accent-color: #da1b84;
+
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--dark-color);
+  cursor: default;
+}
+.section-header {
+    color: var(--intense-color);
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+.bg-light {
+  background-color: var(--light-color);
+}
+.bg-calm {
+  background-color: var(--calm-color);
+}
+.bg-intense {
+  background-color: var(--intense-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+.text-calm {
+  color: var(--calm-color);
+}
+.text-intense {
+  color: var(--intense-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+
+.glass {
+  backdrop-filter: blur(10px);          /* размытие фона за блоком */
+  -webkit-backdrop-filter: blur(10px);  /* поддержка для Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* легкая тень */
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.glass-card {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-black {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}

@@ -8,8 +8,7 @@ function copy(text: string) {
 
 <template>
   <footer id="contacts"
-          class="flex flex-col gap-2 items-center py-10
-                  bg-dark text-calm font-bold">
+          class="flex flex-col gap-2 items-center py-10 mt-5 text-calm font-bold glass glass-black">
     <a href="https://t.me/elf_lana"
        target="_blank"
        class="flex items-center gap-2 hover-light"
@@ -18,11 +17,12 @@ function copy(text: string) {
       elf_lana
     </a>
 
-    <a class="flex items-center gap-2 cursor-copy hover-light"
-       @click="copy('elf_lana@vk.com')"
+    <a href="https://barnaul.hh.ru/resume/7578d4c0ff0b764c860039ed1f5761786f4c4a"
+       target="_blank"
+       class="flex items-center gap-2 hover-light"
     >
-      <img class="contact-ico" src="/assets/images/icons/mail.png" alt="Почта:"/>
-      elf_lana@vk.com
+      <img class="contact-ico" src="/assets/images/icons/hh.png" alt="GitHub:"/>
+      HeadHunter
     </a>
 
     <a href="https://github.com/LanaElf"
@@ -32,6 +32,13 @@ function copy(text: string) {
       <img class="contact-ico" src="/assets/images/icons/github.png" alt="GitHub:"/>
       GitHub
     </a>
+
+    <a class="flex items-center gap-2 cursor-copy hover-light"
+       @click="copy('elf_lana@vk.com')"
+    >
+      <img class="contact-ico" src="/assets/images/icons/mail.png" alt="Почта:"/>
+      elf_lana@vk.com
+    </a>
   </footer>
 </template>
 
@@ -40,12 +47,8 @@ function copy(text: string) {
   color: var(--light-color);
 }
 
-.hover-light:hover img {
-  filter: brightness(0) saturate(100%) invert(94%) sepia(87%) saturate(488%) hue-rotate(287deg) brightness(102%) contrast(103%);
-}
-
 .contact-ico {
   height: 20px;
-  filter: brightness(0) saturate(100%) invert(90%) sepia(12%) saturate(2735%) hue-rotate(314deg) brightness(102%) contrast(103%);
+  filter: invert(100%);
 }
 </style>
