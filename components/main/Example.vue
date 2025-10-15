@@ -19,7 +19,7 @@
     <div>
       А чтобы увидеть код этого сайта - нужно выиграть.
       <br>Шутка. Вот
-        <a href="https://github.com/LanaElf/lanaelf.github.io/tree/main/LanaResume"
+        <a href="https://github.com/LanaElf/lana-resume"
            target="_blank"
            class="text-accent font-semibold">
           ссылка
