@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   app: {
     baseURL: process.env.NODE_ENV === 'production'
-        ? process.env.NUXT_APP_BASE_URL
-            ? process.env.NUXT_APP_BASE_URL : '/'
+        ? process.env.NUXT_PUBLIC_BASE_URL
+            ? process.env.NUXT_PUBLIC_BASE_URL : '/'
         : './',
   },
   compatibilityDate: '2024-11-01',
