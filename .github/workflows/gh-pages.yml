@@ -45,7 +45,7 @@ jobs:
       - name: Build static version for GitHub Pages
         run: npm run generate
         env:
-          NUXT_APP_BASE_URL: '/lana-resume/'
+          NUXT_PUBLIC_BASE_URL: '/lana-resume/'
 
       - name: Copy assets to build
         run: |
