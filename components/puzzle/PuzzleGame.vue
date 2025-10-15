@@ -11,8 +11,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-light py-10 md:px-10 my-7 md:rounded-2xl md:w-5/6 flex flex-col items-center relative">
-      <div class="flex justify-center text-lg font-semibold pb-5">Выбери картинку</div>
+    <div class="bg-light p-5 my-7 rounded-xl w-full flex flex-col items-center relative">
+      <div class="flex justify-center text-lg font-semibold pb-5 text-intense">Выбери картинку</div>
 
       <div class="w-full overflow-x-auto relative h-40 max-sm:h-auto rose-scrollbar">
         <ul class="flex max-sm:flex-wrap gap-3 px-2 justify-center pictures-container absolute max-sm:relative"
@@ -27,7 +27,7 @@ onMounted(() => {
         </ul>
       </div>
 
-      <div class="flex justify-center text-lg font-semibold mt-10 pb-5">Выбери уровень сложности</div>
+      <div class="flex justify-center text-lg font-semibold text-intense mt-10 pb-5">Выбери уровень сложности</div>
 
       <div class="tabs">
         <div class="flex gap-5 justify-center">

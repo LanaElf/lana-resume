@@ -28,7 +28,7 @@
 }
 @media (max-width: 768px) {
   .nav-link {
-    padding: 0 6px;
+    padding: 2px 6px;
   }
 }
 .nav-link:hover {

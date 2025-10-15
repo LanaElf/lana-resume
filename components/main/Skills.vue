@@ -1,6 +1,6 @@
 <template>
-  <section id="skills" class="w-4/6">
-    <div class="glass glass-card glass-black text-white p-10 my-10 flex flex-col items-center">
+  <section id="skills" class="w-5/6 md:w-4/6">
+    <div class="glass glass-card glass-black text-white p-5 sm:p-10 my-10 flex flex-col items-center">
     <h2 class="section-header">Мои навыки</h2>
 
     <div>
@@ -18,22 +18,22 @@
     <div class="my-5">
       <div class="font-bold text-calm press-start-2p text-xs mb-2">Hard</div>
       <ul>
-        <li>Имею коммерческий опыт во фронтенде, изучаю бэкенд</li>
-        <li>Умею декомпозировать комплексные задачи</li>
-        <li>Владею ООП, при необходимости использую принципы SOLID, DRY, KISS, YAGNI</li>
-        <li>Называю переменные и функции соответственно тому, что они хранят или что делают</li>
-        <li>Соблюдаю принятый в компании код-стайл</li>
-        <li>Понимаю CI/CD (настраивала авто сборку и деплой в GitHub Actions)</li>
-        <li>Английский язык (тесты показывали уровни B1-B2)</li>
-        <li>Использую Git</li>
+        <li>Имею коммерческий опыт во фронтенде, изучаю бэкенд.</li>
+        <li>Умею декомпозировать комплексные задачи.</li>
+        <li>Владею ООП, при необходимости использую принципы SOLID, DRY, KISS, YAGNI.</li>
+        <li>Называю переменные и функции соответственно тому, что они хранят или что делают.</li>
+        <li>Соблюдаю принятый в компании код-стайл.</li>
+        <li>Понимаю CI/CD (настраивала авто сборку и деплой в GitHub Actions).</li>
+        <li>Английский язык (тесты показывали уровни B1-B2).</li>
+        <li>Использую Git.</li>
       </ul>
 
       <div class="bold text-calm mt-5">Frontend</div>
 
       <ul class="flex flex-col gap-1">
         <li>База: HTML5 + CSS3 + JavaScript / TypeScript</li>
-        <li>Vue 3 и его экосистема (Composition/Options API, SSR:Nuxt, state management:Pinia/Vuex, i18n и т.д.)</li>
-        <li>React (SSR:Next, state management:Zustand, next-intl и т.д.)</li>
+        <li>Vue 3 и его экосистема (Composition/Options API, SSR: Nuxt, state management: Pinia/Vuex, i18n и т.д.)</li>
+        <li>React (SSR: Next, state management: Zustand, next-intl и т.д.)</li>
         <li>Сss-подходы: атомарный Tailwind / Sass / ui-библиотеки (Quasar / Vuetify)</li>
         <li>Адаптивная вёрстка</li>
         <li>Верстаю по макетам из Figma / Photoshop</li>

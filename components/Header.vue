@@ -3,10 +3,12 @@
         <div class="flex flex-col items-center gap-6 py-20 m-auto">
           <SkillsAnimatedCircle />
 
-          <div class="flex justify-center gap-3 w-300">
-              <h1 class="flex flex-col gap-1 font-bold press-start-2p text-sm">
-                  <span class="text-typing text-calm">Привет! Меня зовут Лана. Я - web-разработчик</span>
-              </h1>
+          <div class="flex justify-center gap-3">
+                <h1 class="flex flex-col md:flex-row gap-2 items-center text-typing text-calm font-bold press-start-2p text-sm">
+                    <span>Привет!</span>
+                    <span>Меня зовут Лана.</span>
+                    <span>Я - web-разработчик</span>
+                </h1>
           </div>
         </div>
     </header>
@@ -22,8 +24,8 @@ header {
 }
 
 .text-typing {
-    white-space:nowrap;
-    overflow:hidden;
+    white-space: nowrap;
+    overflow: hidden;
     animation: typing 3s steps(44, end) forwards;
 }
 
@@ -32,4 +34,11 @@ header {
     to { width: 100% }
 }
 
+@media (max-width: 768px) {
+    .text-typing {
+        white-space: unset;
+        overflow: unset;
+        animation: none;
+    }
+}
 </style>

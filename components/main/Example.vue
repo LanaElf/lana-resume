@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <section id="code-example" class="w-4/6">
-    <div class="flex flex-col items-center my-10 p-10 glass glass-black glass-card text-white">
+  <section id="code-example" class="w-5/6 md:w-4/6">
+    <div class="flex flex-col items-center my-10 p-5 sm:p-10 glass glass-black glass-card text-white">
     <h2 class="section-header">Пример кода</h2>
 
     <div class="px-4">
@@ -17,18 +17,15 @@
     <PuzzleGame />
 
     <div>
-      А чтобы увидеть код этого сайта - нужно выиграть.
-      <br>Шутка. Вот
-        <a href="https://github.com/LanaElf/lana-resume"
-           target="_blank"
-           class="text-accent font-semibold">
-          ссылка
-        </a>
-      на GitHub.
+      А чтобы получить код - нужно выиграть.
+      <br>Шутка. Логику игры можно увидеть на GitHub в компонентах <a href="https://github.com/LanaElf/lana-resume/blob/master/components/puzzle/PuzzleGame.vue" target="_blank">PuzzleGame.vue</a>, <a href="https://github.com/LanaElf/lana-resume/blob/master/components/puzzle/PuzzleDetail.vue" target="_blank">PuzzleDetail.vue</a> и сторе <a href="https://github.com/LanaElf/lana-resume/blob/master/stores/puzzle-store.ts" target="_blank">puzzle-store.ts</a>
     </div>
     </div>
   </section>
 </template>
 
-<style>
+<style scoped>
+a {
+  color: var(--accent-color);
+}
 </style>

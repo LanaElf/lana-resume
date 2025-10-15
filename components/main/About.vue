@@ -3,13 +3,13 @@
 </script>
 
 <template>
-  <section id="about-me" class="w-4/6">
-    <div class="flex flex-col items-center my-10 p-10 glass glass-card">
+  <section id="about-me" class="w-5/6 md:w-4/6">
+    <div class="flex flex-col items-center my-10 p-5 sm:p-10 glass glass-card">
     <h2 class="section-header">Обо мне</h2>
 
     <div class="main-photo"></div>
 
-    <div class="p-4">
+    <div class="mt-4">
       Мне 32 года.
       <br>В 2016 году я получила высшее образование в Финансовом Университете при Правительстве РФ по направлению "менеджмент и
       маркетинг".
@@ -45,5 +45,6 @@
     border-radius: 50%;
     background: url("@/assets/images/main-photo.jpg");
     background-size: contain;
+    filter: drop-shadow(0px 0px 5px var(--intense-color));
 }
 </style>

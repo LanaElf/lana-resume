@@ -2,13 +2,13 @@
 </script>
 
 <template>
-    <section id="experience" class="w-4/6">
-        <div class="flex flex-col gap-5 my-10 p-10 px-4 items-center glass glass-card">
+    <section id="experience" class="w-5/6 md:w-4/6">
+        <div class="flex flex-col gap-5 my-10 p-5 sm:p-10 items-center glass glass-card">
         <h2 class="section-header">Опыт</h2>
 
         <div class="font-semibold text-lg">1 год 8 месяцев коммерческого опыта</div>
 
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-5 p-4">
             <div>
                 <div class="font-semibold text-intense">AE web studio:</div>
 
