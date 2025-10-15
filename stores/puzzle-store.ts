@@ -1,8 +1,10 @@
 import {defineStore} from 'pinia'
+import { useRuntimeConfig } from '#imports'
 
 export const usePuzzleStore: any = defineStore('puzzle', () => {
-    const picDir: string = process.env.NUXT_APP_BASE_URL
-        ? `${process.env.NUXT_APP_BASE_URL}_nuxt/assets/images/puzzlePictures/`
+    const baseUrl = useRuntimeConfig().public.NUXT_APP_BASE_URL
+    const picDir: string = baseUrl
+        ? `${baseUrl}_nuxt/assets/images/puzzlePictures/`
         : '/_nuxt/assets/images/puzzlePictures/';
 
     const pictures: Array<string> = [
