@@ -6,10 +6,6 @@ export default defineNuxtConfig({
             ? process.env.NUXT_PUBLIC_BASE_URL : '/'
         : './',
   },
-  runtimeConfig: {
-    isProduction: process.env.NODE_ENV === 'production',
-    ghPagesUrl: '/lana-resume/',
-  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [

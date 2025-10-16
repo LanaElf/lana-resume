@@ -2,14 +2,7 @@ import {defineStore} from 'pinia'
 import { useRuntimeConfig } from '#imports'
 
 export const usePuzzleStore: any = defineStore('puzzle', () => {
-    const config = useRuntimeConfig();
-
-    const picDir: string = config.isProduction
-        ? `${config.ghPagesUrl}_nuxt/assets/images/puzzlePictures/`
-        : '/_nuxt/assets/images/puzzlePictures/';
-
-        console.log(config, picDir);
-
+    const picDir: string = `${useRuntimeConfig().app.baseURL}_nuxt/assets/images/puzzlePictures/`;
 
     const pictures: Array<string> = [
         'IMG_20230708_185602_925.jpg',
@@ -228,8 +221,6 @@ export const usePuzzleStore: any = defineStore('puzzle', () => {
     }
 
     return {
-        picDir,
-        pictures,
         picturePaths,
         difficulties,
         chosenPuzzle,
