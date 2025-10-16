@@ -6,6 +6,9 @@ export default defineNuxtConfig({
             ? process.env.NUXT_PUBLIC_BASE_URL : '/'
         : './',
   },
+  runtimeConfig: {
+    ghPagesUrl: process.env.NUXT_PUBLIC_BASE_URL,
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [

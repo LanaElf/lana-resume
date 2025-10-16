@@ -58,7 +58,6 @@ const scrollY = ref(0)
 
 function handleScroll() {
   if (scrollBox.value) {
-    console.log('scrollBox.scrollTop:', scrollBox.value.scrollTop)
     scrollY.value = scrollBox.value.scrollTop
   }
 }
