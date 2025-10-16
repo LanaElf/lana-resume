@@ -4,11 +4,11 @@ import { useRuntimeConfig } from '#imports'
 export const usePuzzleStore: any = defineStore('puzzle', () => {
     const config = useRuntimeConfig();
 
-    const picDir: string = config.isProd
+    const picDir: string = config.isProduction
         ? `${config.ghPagesUrl}_nuxt/assets/images/puzzlePictures/`
         : '/_nuxt/assets/images/puzzlePictures/';
 
-        console.log(config.ghPagesUrl, picDir);
+        console.log(config, picDir);
 
 
     const pictures: Array<string> = [
