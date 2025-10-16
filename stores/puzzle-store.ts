@@ -8,6 +8,9 @@ export const usePuzzleStore: any = defineStore('puzzle', () => {
         ? `${baseUrl}_nuxt/assets/images/puzzlePictures/`
         : '/_nuxt/assets/images/puzzlePictures/';
 
+        console.log(baseUrl, picDir);
+
+
     const pictures: Array<string> = [
         'IMG_20230708_185602_925.jpg',
         'IMG_20220917_013847_364.jpg',
