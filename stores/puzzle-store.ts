@@ -2,13 +2,13 @@ import {defineStore} from 'pinia'
 import { useRuntimeConfig } from '#imports'
 
 export const usePuzzleStore: any = defineStore('puzzle', () => {
-    const baseUrl = useRuntimeConfig().ghPagesUrl;
+    const config = useRuntimeConfig();
 
-    const picDir: string = baseUrl
-        ? `${baseUrl}_nuxt/assets/images/puzzlePictures/`
+    const picDir: string = config.isProd
+        ? `${config.ghPagesUrl}_nuxt/assets/images/puzzlePictures/`
         : '/_nuxt/assets/images/puzzlePictures/';
 
-        console.log(baseUrl, picDir);
+        console.log(config.ghPagesUrl, picDir);
 
 
     const pictures: Array<string> = [
