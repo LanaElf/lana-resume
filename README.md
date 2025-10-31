@@ -1,8 +1,6 @@
 Мой сайт-резюме, Vue + Nuxt + TS + Pinia + Tailwind. 
 Настроен CI/CD в GItHub Actions c отправкой уведомлений в telegram
 
-Посмотреть можно <a href="https://dev-lana.ru" target="_blank">здесь</a>
-
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Lana Dev',
   ogTitle: 'Лана, frontend-разработчик',
-  ogImage: 'https://dev-lana.ru/_nuxt/assets/images/dev-lana-og.jpg',
-  ogUrl: 'https://dev-lana.ru/',
+  ogImage: 'https://lanaelf.github.io/lana-resume/_nuxt/assets/images/dev-lana-og.jpg',
+  ogUrl: 'https://lanaelf.github.io/lana-resume/',
 })
 </script>
 

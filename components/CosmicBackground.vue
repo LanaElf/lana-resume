@@ -85,7 +85,7 @@ function randomTwinkle() { return (1 + Math.random() * 3).toFixed(2) }
 const nearStars = Array.from({ length: nearCount }, () => ({
   left: randomPercent(),
   top: randomPercent(),
-  size: randomSize(4, 6),     // Ближние - немного крупнее
+  size: randomSize(4, 6),
   twinkle: randomTwinkle()
 }))
 
@@ -160,7 +160,6 @@ const dustStars = Array.from({ length: dustCount }, () => ({
   left: 0; top: 0;
   width: 100vw;
   height: 300%;
-  pointer-events: none;
   z-index: -1;
 }
 .far-star {
