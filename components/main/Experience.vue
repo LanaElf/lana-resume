@@ -8,7 +8,7 @@
 
         <div class="font-semibold text-lg">1 год 8 месяцев коммерческого опыта</div>
 
-        <div class="flex flex-col gap-5 p-4">
+        <div class="flex flex-col gap-5">
             <div>
                 <div class="font-semibold text-intense">AE web studio:</div>
 

@@ -59,6 +59,7 @@ defineExpose({
 </script>
 
 <template>
+  <client-only>
   <div
       data-allow-mismatch
       class="puzzle-detail"
@@ -77,6 +78,7 @@ defineExpose({
          alt="поверни"
     >
   </div>
+  </client-only>
 </template>
 
 <style scoped>

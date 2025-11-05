@@ -170,13 +170,12 @@ export const usePuzzleStore: any = defineStore('puzzle', () => {
 
             //адаптация под размер экрана
 
-            if (chosenPuzzle.value.containerWidth + 16/*margins*/ > window.screen.width) {
-                console.log(window.screen.width, chosenPuzzle.value.containerWidth )
-                const newWidth = window.screen.width - 16
+            if (chosenPuzzle.value.containerWidth > window.screen.width/6*5 - 16/*margins*/) {
+                const newWidth = window.screen.width/6*5 - 16
                 const ratio = newWidth / chosenPuzzle.value.containerWidth;
+
                 chosenPuzzle.value.containerWidth = newWidth
                 chosenPuzzle.value.containerHeight = Math.round(chosenPuzzle.value.containerHeight * ratio);
-                console.log(chosenPuzzle.value.containerWidth, chosenPuzzle.value.containerHeight)
             }
         }
 

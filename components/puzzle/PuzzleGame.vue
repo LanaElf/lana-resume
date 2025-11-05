@@ -11,18 +11,17 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-light p-5 my-7 rounded-xl w-full flex flex-col items-center relative">
+    <div class="bg-light p-5 my-7 md:rounded-xl w-full flex flex-col items-center relative">
       <div class="flex justify-center text-lg font-semibold pb-5 text-intense">Выбери картинку</div>
 
-      <div class="w-full overflow-x-auto relative h-40 max-sm:h-auto rose-scrollbar">
+      <div class="w-full overflow-x-auto relative h-40 max-sm:h-auto rose-scrollbar choose-picture-mobile">
         <ul class="flex max-sm:flex-wrap gap-3 px-2 justify-center pictures-container absolute max-sm:relative"
             id="array-rendering">
           <li v-for="picturePath in puzzleStore.picturePaths">
             <img @click=puzzleStore.choosePicture(picturePath) :src=picturePath
                  class="rounded-2xl max-w-32 max-h-32 cursor-pointer"
                  :class="puzzleStore.chosenPuzzle.picturePath === picturePath && 'chosen-picture'"
-                 alt="Картинка для пазла"
-            >
+                 alt="Картинка для пазла">
           </li>
         </ul>
       </div>
