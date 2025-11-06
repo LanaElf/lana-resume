@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-light p-5 my-7 md:rounded-xl w-full flex flex-col items-center relative">
+    <div class="bg-light p-5 my-7   w-full flex flex-col items-center relative">
       <div class="flex justify-center text-lg font-semibold pb-5 text-intense">Выбери картинку</div>
 
       <div class="w-full overflow-x-auto relative h-40 max-sm:h-auto rose-scrollbar choose-picture-mobile">

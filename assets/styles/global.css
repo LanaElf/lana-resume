@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet');
 
 .nunito {
   font-family: "Nunito", monospace;
@@ -18,7 +18,7 @@
   --intense-color: #861de8;
   --accent-color: #da1b84;
 
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", monospace;
   scroll-behavior: smooth;
   color: var(--dark-color);
   cursor: default;
@@ -32,7 +32,7 @@
     line-height: 1.75rem;
     text-transform: uppercase;
     padding-bottom: 10px;
-    font-family: "Press Start 2P", sans-serif;
+    font-family: "Press Start 2P", system-ui, Arial, sans-serif;
 }
 
 .bg-dark {

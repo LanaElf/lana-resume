@@ -5,15 +5,14 @@ export const usePuzzleStore: any = defineStore('puzzle', () => {
     const picDir: string = `${useRuntimeConfig().app.baseURL}_nuxt/assets/images/puzzlePictures/`;
 
     const pictures: Array<string> = [
+        'IMG_20240318_095558_229.jpg',
         'IMG_20230708_185602_925.jpg',
-        'IMG_20220917_013847_364.jpg',
         'IMG_20220925_093947_641.jpg',
         'photo_2025-03-29_00-13-22.jpg',
         'IMG_20230324_115237_951.jpg',
         'IMG_20230705_163405_155.jpg',
         'IMG_20230808_135702_684.jpg',
         'photo_2025-06-01_12-46-05.jpg',
-        'IMG_20240318_095558_229.jpg',
         'photo_2025-05-30_14-46-54.jpg',
         'IMG_20240424_013619_702.jpg',
         'Adorable.gif',
