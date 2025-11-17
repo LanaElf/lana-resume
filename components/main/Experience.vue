@@ -8,7 +8,7 @@
 
         <div class="flex flex-col gap-5">
             <div>
-                <div class="font-semibold text-lg">1 год 8 месяцев коммерческого опыта</div>
+                <div class="font-semibold text-calm press-start-2p text-xs">1 год 8 месяцев коммерческого опыта</div>
                 
                 <div>
                     В начале карьерного пути я поработала в штате развивающегося интернет-магазина, выполняла задачи по верстке и контенту.
@@ -21,7 +21,7 @@
             </div>
 
             <div>
-                <div class="font-semibold text-lg">Некоммерческий опыт:</div>
+                <div class="font-semibold text-calm press-start-2p text-xs">Некоммерческий опыт:</div>
                 
                 2,5 года назад в целях изучения Vue написала
                 <a class="text-accent font-semibold" href="https://lanaelf.github.io/mlp-library/" target="_blank">приложение-читалку</a> с разными темами,
