@@ -14,9 +14,10 @@
 :root {
   --dark-color: #14011a;
   --light-color: #dcd4fb;
-  --calm-color: #c59eff;
-  --intense-color: #861de8;
-  --accent-color: #da1b84;
+  --calm-color: #9b90ff;
+  --stable-color: #3b80ff;
+  --intense-color: #5f00f8;
+  --accent-color: #d41bda;
 
   font-family: "Nunito", monospace;
   scroll-behavior: smooth;
@@ -24,15 +25,15 @@
   cursor: default;
 }
 .section-header {
-    color: var(--intense-color);
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1rem;
-    line-height: 1.75rem;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    font-family: "Press Start 2P", system-ui, Arial, sans-serif;
+  color: var(--stable-color);
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-family: "Press Start 2P", system-ui, Arial, sans-serif;
 }
 
 .bg-dark {
@@ -63,17 +64,20 @@
 .text-accent {
   color: var(--accent-color);
 }
+.text-stable {
+  color: var(--stable-color);
+}
 
 .glass {
-  backdrop-filter: blur(10px);          /* размытие фона за блоком */
-  -webkit-backdrop-filter: blur(10px);  /* поддержка для Safari */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* легкая тень */
+  backdrop-filter: blur(10px); /* размытие фона за блоком */
+  -webkit-backdrop-filter: blur(10px); /* поддержка для Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* легкая тень */
   background: rgba(255, 255, 255, 0.6);
 }
 
 .glass-card {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .glass-black {
